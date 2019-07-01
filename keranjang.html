@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Keranjang</title>
+        <link rel="icon" href="assets/img/Logo/L-logo3.png">
+        <link rel="stylesheet" href="assets/css/keranjang.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script
+            src="http://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous">
+        </script>
+        <script src="reference/angular.min.js"></script>
+        <script src="assets/js/keranjang.js"></script>
+    </head>
+    <body ng-app="myApp">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-sm bg-white navbar-white shadow-sm fixed-top">
+            <a class="navbar-brand" href="index1.html">
+                <img src="assets/img/Icon/ludus.png" alt="logo" class="logo">
+            </a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="home-thread.html">Forum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="jualbeli.html">Jual Beli</a>
+            </li>
+          </ul>
+            <div class="navbar-nav ml-auto">
+                <a href="#"><i class="fa fa-shopping-cart" style="font-size:20px; margin-top: 11px;"></i></a> 
+                <div class="box-pro dropdown">
+                    <a href="edit-profile.html" class="nav-item nav-link">
+                        <img src="assets/img/Logo/dd.jpg" id="profil">
+                        <h6 class="nama-pro overflow">Daenia dsfasdfafdsf</h6> 
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="wishlist.html"><i class="fa fa-heart-o"></i>Wishlist</a>                        
+                        <a href="edit-profile.html"><i class="fa fa-address-card-o"></i>Edit Profil</a>
+                        <hr>
+                        <a href="index.html"><i class="fa fa-sign-out"></i>Keluar</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <br><br><br><br>
+        <div class="bagidua" ng-controller="p">
+            <div class="kiri">
+                <div class="container">
+                    <div class="ceklis">
+                        <div class="ceklis2">
+                            <input type="checkbox" class="selectall" />
+                            <label class="label1" for="Item 1">Semua</label>
+                        </div>
+                        <div class="sampah">
+                            <a href=""><i style="font-size:24px" class="fa">&#xf014;</i>Hapus</a> 
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card bg-white mb-3 produk shadow-sm" style="width: 70%">
+                        <div class="ceklis1">
+                            <div class="ceklis3">
+                                <input type="checkbox" class="individu" />
+                            </div>  
+                            <div class="harga1 ml-auto">
+                                <p class="alignleft">Sub Total Rp</p> <h5 class="alignright harga">{{price1 | number}}</h5>
+                            </div>                          
+                        </div>
+                        <div class="cont-produk">
+                            <div class="kiri1">
+                                <br>
+                                <img src="assets/img/Game/apex-legends-keyart.jpg" alt="" class="kotakgame">
+                                
+                            </div>
+                            <div class="tengah1">
+                                <br>
+                                <h6 class="">Origin Access 1 Bulan +1000 Apex Coin</h6>
+                                <p class="">Apex Legend</p>
+                                <p class="">Origin</p>
+                            </div>
+                            <div class="kanan1">
+                                <br>
+                                <img src="assets/img/Icon/shop.png" alt="" class="shop"> Edo Shop 
+                            </div>    
+                        </div>                        
+                    </div>
+                    <div class="card bg-white mb-3 produk shadow-sm" style="width: 70%">
+                            <div class="ceklis1">
+                                <div class="ceklis3">
+                                    <input type="checkbox" class="individu" />
+                                </div>  
+                                <div class="harga1 ml-auto">
+                                    <p class="alignleft">Sub Total Rp</p> <h5 class="alignright harga">{{price2 | number}}</h5>
+                                </div>                          
+                            </div>
+                            <div class="cont-produk">
+                                <div class="kiri1">
+                                    <br>
+                                    <img src="assets/img/Game/apex-legends-keyart.jpg" alt="" class="kotakgame">
+                                    
+                                </div>
+                                <div class="tengah1">
+                                    <br>
+                                    <h6 class="">Origin Access 1 Bulan +1000 Apex Coin</h6>
+                                    <p class="">Apex Legend</p>
+                                    <p class="">Origin</p>
+                                </div>
+                                <div class="kanan1">
+                                    <br>
+                                    <img src="assets/img/Icon/shop.png" alt="" class="shop"> Edo Shop 
+                                </div>    
+                            </div>                        
+                        </div>
+                    
+                </div>
+            </div>
+
+            <div class="kanan">
+                <div class="cont-bayar">
+                    <div class="bs">
+                        <h4><strong>Total Harga</strong></h4>
+                        <div class="card bg-white mb-3" style="width: 20rem; padding: 10px">
+                            <div>
+                                <p class="alignleft">Total Belanja</p>
+                                <h5 class="alignright">Rp<b class="harga">{{price1 + price2 | number}}</b></h5> 
+                            </div>
+                        </div>
+                        <a href="pembayaran.html">
+                            <button type="button" class="btn-block btn btn-primary btn-block btn-lg " >Pilih Pembayaran</button>
+                        </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>
