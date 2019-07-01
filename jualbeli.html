@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jual Beli</title>
+        <link rel="icon" href="assets/img/Logo/L-logo3.png">
+        <link rel="stylesheet" href="assets/css/jualbeli.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="reference/angular.min.js"></script>
+    </head>
+    <body ng-app="">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-sm bg-white navbar-white shadow-sm fixed-top">
+            <a class="navbar-brand" href="index1.html">
+        <img src="assets/img/Icon/ludus.png" alt="logo" class="logo">
+        </a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="home-thread.html">Forum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link jualbeli" href="jualbeli.html">Jual Beli</a>
+            </li>
+          </ul>
+            <div class="navbar-nav ml-auto">
+                <a href="keranjang.html"><i class="fa fa-shopping-cart" style="font-size:20px; margin-top: 11px;"></i></a> 
+                <div class="box-pro dropdown">
+                    <a href="edit-profile.html" class="nav-item nav-link">
+                        <img src="assets/img/Logo/dd.jpg" id="profil">
+                        <h6 class="nama-pro overflow1">Daenia </h6> 
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="wishlist.html"><i class="fa fa-heart-o"></i>Wishlist</a>                        
+                        <a href="edit-profile.html"><i class="fa fa-address-card-o"></i>Edit Profil</a>
+                        <hr>
+                        <a href="index.html"><i class="fa fa-sign-out"></i>Keluar</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar -->
+        <!-- <center> -->
+            <div class="body">
+                <div class="kategori">
+                    <div class="cta filter">
+                        <a href="" class="btn btn-primary" ng-click="name = 'apex, ayodance, apex'">
+                            <img src="assets/img/Game/apex-legends.png" class="kat" alt="">
+                            <p class="jdl">Semua</p>
+                        </a> 
+                        <a href="" class="btn btn-primary" ng-click="name = 'apex'">
+                            <img src="assets/img/Game/apex-legends.png" class="kat" alt="">
+                            <p class="jdl">Apex</p>
+                        </a> 
+                        <a href="" class="btn btn-primary" ng-click="name = 'ayodance'">
+                            <img src="assets/img/Game/ayodance-10_thumb.png" class="kat" alt="">
+                            <p class="jdl">Ayodance</p>
+                        </a>
+                        <a href="" class="btn btn-primary" ng-click="name = 'gos'">
+                            <img src="assets/img/Game/game-of-sultans-1024x387.jpg" class="kat" alt="">
+                            <p class="jdl">GOS</p>
+                        </a>
+                    </div>
+                            
+                    
+                </div>
+                <br><br>
+                <!-- <div class="produk">
+
+                </div> -->
+                <div class="produk" ng-switch="name">
+                    <a href="produk.html" >
+                        <div class="card" ng-switch-when="apex">
+                            <img class="card-img-top" src="assets/img/Game/apex-legends.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h6 class="card-title overflow">Apex COIN 1000</h6>
+                                <h5 class="card-text"><b>Rp120.000</b></h5>
+                                <br>
+                                <a href="#" class="kanan">Edo Shop</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="produk1.html">
+                        <div class="card" ng-switch-when="ayodance">
+                            <img class="card-img-top" src="assets/img/Game/ayodance-10_thumb.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h6 class="card-title overflow">John Doetes e belansdaasadddddddddsssssssssss dgsdsfafdfsggagddddja</h6>
+                                <h5 class="card-text"><b>Rp120.000</b></h5>
+                                <br>
+                                <a href="#" class="kanan">Edo Shop</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="produk2.html">
+                        <div class="card" ng-switch-when="">
+                            <img class="card-img-top" src="assets/img/Game/speeddrifter.jpg" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h6 class="card-title overflow">John Doetes e belansdaasadddddddddsssssssssss dgsdsfafdfsggagddddja</h6>
+                                <h5 class="card-text"><b>Rp120.000</b></h5>
+                                <br>
+                                <a href="toko.html" class="kanan">Edo Shop</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card" ng-switch-when="">
+                            <img class="card-img-top" src="assets/img/Game/megaxus.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h6 class="card-title overflow">John Doetes e belansdaasadddddddddsssssssssss dgsdsfafdfsggagddddja</h6>
+                                <h5 class="card-text"><b>Rp120.000</b></h5>
+                                <br>
+                                <a href="toko.html" class="kanan">Edo Shop</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="produk3.html">
+                        <div class="card" ng-switch-when="gos">
+                            <img class="card-img-top" src="assets/img/Game/game-of-sultans-1024x387.jpg" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h6 class="card-title overflow">John Doetes e belansdaasadddddddddsssssssssss dgsdsfafdfsggagddddja</h6>
+                                <h5 class="card-text"><b>Rp120.000</b></h5>
+                                <br>
+                                <a href="toko.html" class="kanan">Edo Shop</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card" ng-switch-when="apex">
+                            <img class="card-img-top" src="assets/img/Game/apex-legends.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h6 class="card-title overflow">John Doetes e belansdaasadddddddddsssssssssss dgsdsfafdfsggagddddja</h6>
+                                <h5 class="card-text"><b>Rp120.000</b></h5>
+                                <br>
+                                <a href="#" class="kanan">Edo Shop</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card" ng-switch-when="apex">
+                            <img class="card-img-top" src="assets/img/Game/apex-legends.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h6 class="card-title overflow">John Doetes e belansdaasadddddddddsssssssssss dgsdsfafdfsggagddddja</h6>
+                                <h5 class="card-text"><b>Rp120.000</b></h5>
+                                <br>
+                                <a href="#" class="kanan">Edo Shop</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card" ng-switch-when="apex">
+                            <img class="card-img-top" src="assets/img/Game/apex-legends.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h6 class="card-title overflow">John Doetes e belansdaasadddddddddsssssssssss dgsdsfafdfsggagddddja</h6>
+                                <h5 class="card-text"><b>Rp120.000</b></h5>
+                                <br>
+                                <a href="#" class="kanan">Edo Shop</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card" ng-switch-when="apex">
+                            <img class="card-img-top" src="assets/img/Game/apex-legends.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h6 class="card-title overflow">John Doetes e belansdaasadddddddddsssssssssss dgsdsfafdfsggagddddja</h6>
+                                <h5 class="card-text"><b>Rp120.000</b></h5>
+                                <br>
+                                <a href="#" class="kanan">Edo Shop</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card" ng-switch-when="apex">
+                            <img class="card-img-top" src="assets/img/Game/apex-legends.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h6 class="card-title overflow">John Doetes e belansdaasadddddddddsssssssssss dgsdsfafdfsggagddddja</h6>
+                                <h5 class="card-text"><b>Rp120.000</b></h5>
+                                <br>
+                                <a href="#" class="kanan">Edo Shop</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card" ng-switch-when="apex">
+                            <img class="card-img-top" src="assets/img/Game/apex-legends.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h6 class="card-title overflow">John Doetes e belansdaasadddddddddsssssssssss dgsdsfafdfsggagddddja</h6>
+                                <h5 class="card-text"><b>Rp120.000</b></h5>
+                                <br>
+                                <a href="#" class="kanan">Edo Shop</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card" ng-switch-when="apex">
+                            <img class="card-img-top" src="assets/img/Game/apex-legends.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h6 class="card-title overflow">John Doetes e belansdaasadddddddddsssssssssss dgsdsfafdfsggagddddja</h6>
+                                <h5 class="card-text"><b>Rp120.000</b></h5>
+                                <br>
+                                <a href="#" class="kanan">Edo Shop</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card" ng-switch-when="apex">
+                            <img class="card-img-top" src="assets/img/Game/apex-legends.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h6 class="card-title overflow">John Doetes e belansdaasadddddddddsssssssssss dgsdsfafdfsggagddddja</h6>
+                                <h5 class="card-text"><b>Rp120.000</b></h5>
+                                <br>
+                                <a href="#" class="kanan">Edo Shop</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card" ng-switch-when="apex">
+                            <img class="card-img-top" src="assets/img/Game/apex-legends.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h6 class="card-title overflow">John Doetes e belansdaasadddddddddsssssssssss dgsdsfafdfsggagddddja</h6>
+                                <h5 class="card-text"><b>Rp120.000</b></h5>
+                                <br>
+                                <a href="#" class="kanan">Edo Shop</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card" ng-switch-when="apex">
+                            <img class="card-img-top" src="assets/img/Game/apex-legends.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h6 class="card-title overflow">John Doetes e belansdaasadddddddddsssssssssss dgsdsfafdfsggagddddja</h6>
+                                <h5 class="card-text"><b>Rp120.000</b></h5>
+                                <br>
+                                <a href="#" class="kanan">Edo Shop</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card" ng-switch-when="apex">
+                            <img class="card-img-top" src="assets/img/Game/apex-legends.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h6 class="card-title overflow">John Doetes e belansdaasadddddddddsssssssssss dgsdsfafdfsggagddddja</h6>
+                                <h5 class="card-text"><b>Rp120.000</b></h5>
+                                <br>
+                                <a href="#" class="kanan">Edo Shop</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card" ng-switch-when="apex">
+                            <img class="card-img-top" src="assets/img/Game/apex-legends.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h6 class="card-title overflow">John Doetes e belansdaasadddddddddsssssssssss dgsdsfafdfsggagddddja</h6>
+                                <h5 class="card-text"><b>Rp120.000</b></h5>
+                                <br>
+                                <a href="#" class="kanan">Edo Shop</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="card" ng-switch-when="apex">
+                            <img class="card-img-top" src="assets/img/Game/apex-legends.png" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h6 class="card-title overflow">John Doetes e belansdaasadddddddddsssssssssss dgsdsfafdfsggagddddja</h6>
+                                <h5 class="card-text"><b>Rp120.000</b></h5>
+                                <br>
+                                <a href="#" class="kanan">Edo Shop</a>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+        <!-- </center> -->
+
+    </body>
+</html>

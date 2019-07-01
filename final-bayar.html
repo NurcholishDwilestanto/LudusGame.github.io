@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Final Pembayaran</title>
+        <link rel="icon" href="assets/img/Logo/L-logo3.png">
+        <link rel="stylesheet" href="assets/css/final-bayar.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="reference/angular.min.js"></script>
+    </head>
+    <body ng-app="myApp"    >
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-sm bg-white navbar-white shadow-sm fixed-top">
+            <a class="navbar-brand" href="index1.html">
+                <img src="assets/img/Icon/ludus.png" alt="logo" class="logo">
+            </a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="home-thread.html">Forum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="jualbeli.html">Jual Beli</a>
+            </li>
+          </ul>
+            <div class="navbar-nav ml-auto">
+                <a href="#"><i class="fa fa-shopping-cart" style="font-size:20px; margin-top: 11px;"></i></a> 
+                <div class="box-pro dropdown">
+                    <a href="#" class="nav-item nav-link">
+                        <img src="assets/img/Logo/dd.jpg" id="profil">
+                        <h6 class="nama-pro overflow">Daenia dsfasdfafdsf</h6> 
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="wishlist.html"><i class="fa fa-heart-o"></i>Wishlist</a>                        
+                        <a href="edit-profile.html"><i class="fa fa-address-card-o"></i>Edit Profil</a>
+                        <hr>
+                        <a href="index.html"><i class="fa fa-sign-out"></i>Keluar</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- stop navbarrrrr -->
+        <br><br><br><br>
+        <div class="container">
+            <div class="kiri">
+                <div class="cont-bayar">
+                    <div class="bs">
+                        <p><strong>Data Diri</strong></p>
+                        <div class="card bg-light mb-3" style="width: 45rem; padding: 10px">
+                            <div>
+                                Nama Penerima
+                                <p>Daenia Maharah</p><hr>
+                            </div>                            
+                            <div>
+                                Nomor HP
+                                <p>08977886775</p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="card bg-light" style="width: 45rem; padding: 10px; margin-top: 15px;" ng-controller="produk1">
+                            <div class="abu dp-flex" >
+                                <p class="m-2">Sub Total</p> <h5 class="harga ml-auto m-2">Rp{{price * quantity | number}}</h5>
+                                <!-- <script src="assets/js/final-bayar.js"></script> -->
+                            </div>
+                            <div class="d-flex">
+                                <div class="p-2">
+                                    <img src="assets/img/Game/apex-legends-keyart.jpg" alt="">
+                                </div>
+                                <div class="p-2">
+                                    <p>1000 Coin Apex</p>
+                                    <p>Apex Legend</p>
+                                    <p>Origin</p>
+                                </div>
+                                <div class="p-2 ml-auto">
+                                    Jumlah Produk
+                                    <h6>{{quantity}} item</h6>
+                                    <div class="tokoo">
+                                        <a href="toko.html"  style="padding-top: 20px;">
+                                        <img src="assets/img/Icon/store.png" alt="">
+                                        Edo Shop</a>
+                                    </div>                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="card bg-light" style="width: 45rem; padding: 10px; margin-top: 15px;" ng-controller="produk2">
+                            <div class="abu dp-flex" >
+                                <p class="m-2">Sub Total</p> <h5 class="harga ml-auto m-2">{{price * quantity | number}}</h5>
+                            </div>
+                            <div class="d-flex">
+                                <div class="p-2">
+                                    <img src="assets/img/Game/apex-legends-keyart.jpg" alt="">
+                                </div>
+                                <div class="p-2">
+                                    <p>1000 Coin Apex</p>
+                                    <p>Apex Legend</p>
+                                    <p>Origin</p>
+                                </div>
+                                <div class="p-2 ml-auto">
+                                    Jumlah Produk
+                                    <h6>{{quantity}} item</h6>
+                                    <div class="tokoo">
+                                        <a href="toko.html"  style="padding-top: 20px;">
+                                        <img src="assets/img/Icon/store.png" alt="">
+                                        Edo Shop</a>
+                                    </div>                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="card bg-light" style="width: 45rem; padding: 10px; margin-top: 15px;" ng-controller="produk3">
+                            <div class="abu dp-flex" >
+                                <p class="m-2">Sub Total</p> <h5 class="harga ml-auto m-2">{{price * quantity | number}}</h5>
+                            </div>
+                            <div class="d-flex">
+                                <div class="p-2">
+                                    <img src="assets/img/Game/apex-legends-keyart.jpg" alt="">
+                                </div>
+                                <div class="p-2">
+                                    <p>1000 Coin Apex</p>
+                                    <p>Apex Legend</p>
+                                    <p>Origin</p>
+                                </div>
+                                <div class="p-2 ml-auto">
+                                    Jumlah Produk
+                                    <h6>{{quantity}} item</h6>
+                                    <div class="tokoo">
+                                        <a href="toko.html"  style="padding-top: 20px;" class="hvr">
+                                        <img src="assets/img/Icon/store.png" alt="">
+                                        Edo Shop</a>
+                                    </div>                                    
+                                </div>
+                                
+                            </div>
+                        </div>                        
+                    </div>
+                    <!-- <script src="assets/js/final-bayar.js"></script> -->
+                </div>
+            </div>
+            <div class="kanan"> 
+                <div class="cont-bayar" >
+                    <div class="bs">
+                        <p><strong>Total Transaksi</strong></p>
+                        <div class="card bg-light mb-3" style="width: 20rem; padding: 10px;" >  
+                            <div ng-controller="total">
+                                <p style="float: left;">Total harga</p> 
+                                <h5 style="float: right;">Rp{{total | number}}</h5>                                
+                            </div>              
+                        </div>
+                        <ul class="navbar-nav">
+                            <a class="btn-block btn btn-primary " a class="nav-link" href="pembayaran.html">Pilih pembayaran</a>
+                        </ul>                        
+                    </div>
+                </div>
+            </div>
+            <script src="assets/js/final-bayar.js"></script>
+        </div>
+        
+    </body>
+</html>
