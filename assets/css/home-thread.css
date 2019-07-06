@@ -1,0 +1,160 @@
+/* buat navbar */
+.forum{
+    color: #3f89bc !important;
+}
+.logo{
+    width: 150px;
+    height: 150px;
+    margin: -70px;
+    margin-left: 20px;
+    margin-right: 6px;
+}
+.nav-item{
+    margin-left: 30px;
+}
+.nav-link{
+    color: black;
+}
+.nav-link::after{
+    transition: width .3s;
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #3f89bc;
+}
+.nav-link:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+.navbar li{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center; 
+    text-decoration: none;
+    font-size: 17px;
+}
+/* stop navbar */
+a{
+    text-decoration: none !important;
+    color: black !important;
+}
+a:hover{
+    color: #3f89bc !important;
+}
+.container{
+    display: flex;
+}
+.kiri{
+    width: 70%;
+}
+.kanan{
+    width: 30%;
+}
+.cont-bayar{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+}
+.abu{
+    width: 100%;
+    /* height: 10rem; */
+    background-color: #ccc;
+    display: flex;
+    border-radius: 5px;
+}
+.harga{
+    font-weight: bold;
+}
+img{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+button>img{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.profilecard{
+    display: flex;
+    margin: 10px;
+}
+div.judul1{
+    margin: 0px 0px 10px 10px;
+}
+.namaJam{
+    height: 25px;
+    margin-left: 10px;
+}
+div.profilecard>img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.waktu{
+    font-size: 12px;
+}
+
+/* profill kanan */
+#profil{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.nama-pro{
+    float: right;
+    margin: 5px;
+}
+.box-pro{
+    width: 150px;
+}
+.overflow {
+    width: 60px;
+    /* margin: 0 0 2em 0; */
+    display: -webkit-box;
+    -webkit-line-clamp: 1   ;
+    -webkit-box-orient: vertical;
+    /* white-space: nowrap; */
+    overflow: hidden;
+}
+a>i{
+    margin-right: 18px;
+}
+
+/* dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fcfcfc;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+}
+.dropdown-content a:hover {background-color: rgb(243, 243, 243); border-radius: 5px;}
+.dropdown:hover .dropdown-content {display: block;}
+
+.card-kat{
+    display: flex;
+}
+a.btn-block{
+    color: white !important;
+}
+div.namaJam>h6{
+    color: black !important;
+}
