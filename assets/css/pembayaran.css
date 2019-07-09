@@ -1,0 +1,236 @@
+/* buat navbar */
+a:hover{
+    color: #3f89bc !important;
+}
+.logo{
+    width: 150px;
+    height: 150px;
+    margin: -70px;
+    margin-left: 20px;
+    margin-right: 6px;
+}
+.nav-item{
+    margin-left: 30px;
+}
+.nav-link{
+    color: black;
+}
+.nav-link::after{
+    transition: width .3s;
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #3f89bc;
+}
+.nav-link:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+.navbar li{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center; 
+    text-decoration: none;
+    font-size: 17px;
+}
+/* stop navbar */
+a{
+    text-decoration: none !important;
+    color: black !important;
+}
+img{
+    width: 50px;
+    height: 50px;
+}
+img.pembayaran{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+td>img{
+    width: 39px;
+    height: 39px;
+}
+td>h6{
+    margin-left: 10px;
+}
+.bank-cont{
+    display: flex;
+    flex-wrap: wrap;
+}
+.bank-but{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    object-fit: cover;
+}
+.ktk{
+    width: 250px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 32px;
+}
+.bayar{
+    margin-top: 10px;
+}
+#dana {
+    padding: 5px 0 5px 10px;
+    /* text-align: center; */
+    background-color: rgb(243, 243, 243);
+    border: solid 1px none;
+    width: 500px;
+    border-radius: 5px 5px 0 0;
+  }
+#pane1 {
+    padding: 15px 0px 20px 40px;  /*atas kanan bawah kiri */
+    display: none;
+    background-color: rgb(241, 241, 241);
+    width: 500px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+#transfer {
+    padding: 5px 0 5px 10px;
+    /* text-align: center; */
+    background-color: rgb(243, 243, 243);
+    border: solid 1px none;
+    width: 500px;
+    border-radius: 5px 5px 0 0;
+  }
+#pane2 {
+    padding: 15px 0px 20px 40px;  /*atas kanan bawah kiri */
+    display: none;
+    background-color: rgb(241, 241, 241);
+    width: 500px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+#kredit {
+    padding: 5px 0 5px 10px;
+    /* text-align: center; */
+    background-color: rgb(243, 243, 243);
+    border: solid 1px none;
+    width: 500px;
+    border-radius: 5px 5px 0 0;
+  }
+#pane3 {
+    padding: 15px 0px 20px 40px;  /*atas kanan bawah kiri */
+    display: none;
+    background-color: rgb(241, 241, 241);
+    width: 500px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+#alfa {
+    padding: 5px 0 5px 10px;
+    /* text-align: center; */
+    background-color: rgb(243, 243, 243);
+    border: solid 1px none;
+    width: 500px;
+    border-radius: 5px 5px 0 0;
+  }
+#pane4 {
+    padding: 15px 0px 20px 40px;  /*atas kanan bawah kiri */
+    display: none;
+    background-color: rgb(241, 241, 241);
+    width: 500px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.btn-primary, .btn{
+    margin-right: 10px;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255) !important;
+    border: none;
+}
+.cont-bayar{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+}
+.bagidua{
+    display: flex;
+}
+.kiri{
+    width: 60%;
+    /* height: 610px; */
+}
+.kanan{
+    width: 30%;
+    /* height: 610px; */
+}
+.btn-block{
+    background-color: rgb(38, 137, 243) !important;
+    border: none;
+    color: white !important;
+}
+.btn-block:hover{
+    background-color: rgb(37, 132, 233) !important;
+    color: white !important;
+}
+.kotak{
+    background-color: rgb(52, 219, 155);
+    border-radius: 3px;
+}
+
+#profil{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.nama-pro{
+    float: right;
+    margin: 5px;
+}
+.box-pro{
+    width: 150px;
+}
+.overflow {
+    width: 60px;
+    /* margin: 0 0 2em 0; */
+    display: -webkit-box;
+    -webkit-line-clamp: 1   ;
+    -webkit-box-orient: vertical;
+    /* white-space: nowrap; */
+    overflow: hidden;
+}
+a>i{
+    margin-right: 18px;
+}
+.total-p{
+    font-weight: bold;
+    font-size: 19px;
+}
+div.ktk{
+    cursor: pointer;
+}
+
+/* dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fcfcfc;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+}
+.dropdown-content a:hover {background-color: rgb(243, 243, 243); border-radius: 5px;}
+.dropdown:hover .dropdown-content {display: block;}

@@ -1,0 +1,112 @@
+.logo{
+    width: 150px;
+    height: 150px;
+    margin: -70px;
+    margin-left: 20px;
+    margin-right: 6px;
+}
+.nav-item{
+    margin-left: 30px;
+}
+.nav-link{
+    color: black;
+}
+.nav-link::after{
+    transition: width .3s;
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #3f89bc;
+}
+.nav-link:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+.navbar li{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center; 
+    text-decoration: none;
+    font-size: 17px;
+}
+/* navbar stop */
+a{
+    text-decoration: none !important;
+}
+/* div>a.btn{
+    color: #3f89bc !important;
+} */
+.text-center>a{
+    color: #3f89bc !important;
+}
+.bulan{
+    position: fixed;
+    width: 650px;
+    height: 650px;
+    margin-left: 70px;
+}
+
+.form-control {		
+    min-height: 41px;
+    box-shadow: none;
+    border-color: #e1e4e5;
+}
+.form-control:focus {
+    border-color: #49c1a2;
+}
+.form-control, .btn {        
+    border-radius: 3px;
+}
+.signup-form {
+    width: 400px;
+    margin: 0 auto;
+}
+.signup-form form {
+    color: #9ba5a8;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    background: #fff;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+.signup-form h2 {
+    color: #333;
+    font-weight: bold;
+    margin-top: 0;
+}
+.signup-form hr {
+    margin: 0 -30px 20px;
+}    
+.signup-form .form-group {
+    margin-bottom: 20px;
+}
+.signup-form label {
+    font-weight: normal;
+    font-size: 13px;
+}
+.signup-form .btn {        
+    font-size: 16px;
+    font-weight: bold;
+    background: #42a9eb;
+    border: none;
+    min-width: 140px;
+}
+.signup-form .btn:hover, .signup-form .btn:focus {
+    background: #3197d6;
+    outline: none !important;
+}
+.signup-form a {
+    color: #fff;
+    text-decoration: underline;
+}
+.signup-form a:hover {
+    text-decoration: none;
+}
+.signup-form form a:hover {
+    text-decoration: underline;
+}
+.signup-form{
+    margin-right: 150px;
+}
