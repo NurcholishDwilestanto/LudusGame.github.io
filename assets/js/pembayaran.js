@@ -1,0 +1,54 @@
+$(document).ready(function(){
+    $("#dana").click(function(){
+      $("#pane1").slideToggle("slow");
+    });
+  });
+$(document).ready(function(){
+    $("#transfer").click(function(){
+      $("#pane2").slideToggle("slow");
+    });
+  });
+$(document).ready(function(){
+    $("#kredit").click(function(){
+      $("#pane3").slideToggle("slow");
+    });
+  });
+$(document).ready(function(){
+    $("#alfa").click(function(){
+      $("#pane4").slideToggle("slow");
+    });
+  });
+
+$(document).ready(function(){
+    $(".gopay").click(function(){
+      $("#harga").text("Rp112.000");
+    });
+    $(".bca").click(function(){
+      $("#harga").text("Rp105.000");
+    });
+    $(".bri").click(function(){
+      $("#harga").text("Rp113.000");
+    });
+    $(".bni").click(function(){
+      $("#harga").text("114.500");
+    });
+    $(".cbca").click(function(){
+      $("#harga").text("Rp111.000");
+    });
+    $(".cbri").click(function(){
+      $("#harga").text("Rp110.500");
+    });
+    $(".cbni").click(function(){
+      $("#harga").text("Rp110.400");
+    });
+    $(".alfa").click(function(){
+      $("#harga").text("Rp112.000");
+    });
+    $(".ind").click(function(){
+      $("#harga").text("Rp112.000");
+    });
+    $("#clearbut").click(function(){
+        $("#playId").empty();
+        location.reload();
+      });
+  });
